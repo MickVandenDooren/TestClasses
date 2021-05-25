@@ -2,22 +2,22 @@ package be.intecbrussel;
 
 public class Garage {
 
-    private string naam;
+    private String naam;
 
-    public static garage(String naam){
-        this.naam = getNaam();
+    public Garage(){
+        setNaam();
     }
 
-    public string getNaam() {
+    public String getNaam() {
         return naam;
     }
 
-    public void setNaam(string naam) {
-        this.naam = naam;
+    public void setNaam() {
+    this.naam = toString();
     }
 
     public String toString() {
-        return "Garage: " + naam;
+        return String.valueOf(getNaam());
     }
 
 }

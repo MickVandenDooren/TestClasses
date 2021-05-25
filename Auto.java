@@ -5,20 +5,17 @@ public class Auto {
     private String merknaam;
     private Garage garage;
 
-    public Auto(String merknaam, String garage){
+    public Auto(String merknaam, Garage garage){
         this.merknaam=merknaam;
-        this.garage= setGarage();
+        this.garage = garage;
     }
 
     public String getMerknaam() {
         return merknaam;
     }
 
-    public void setGarage(String garage) {
-        this.garage = garage;
-    }
 
     public String toString() {
-        return "Auto:" + merknaam + " Garage: " + garage;
+        return "Auto:" + getMerknaam() + " Garage: " + garage.getNaam();
     }
 }
